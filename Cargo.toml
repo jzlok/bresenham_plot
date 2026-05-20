@@ -1,0 +1,12 @@
+[package]
+name = "bresenham_plot"
+version = "0.1.1"
+edition = "2021"
+
+[features]
+# Makes `plot_line` use endpoint-order-stable rasterization.
+# With this enabled, plotting A -> B produces the same points as B -> A reversed.
+reversible = []
+
+[dependencies]
+
